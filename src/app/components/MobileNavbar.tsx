@@ -3,6 +3,7 @@ import Hamburger from "hamburger-react";
 import { Sun } from "lucide-react";
 import React, { useState } from "react";
 import CVButton from "./CVButton";
+import ThemeSwitch from "./ThemeSwitch";
 
 const MobileNavbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -11,8 +12,8 @@ const MobileNavbar = () => {
     <div className="md:hidden px-4">
       <Hamburger toggled={isOpen} toggle={setOpen} />
       {isOpen && (
-        <nav className="absolute left-0 right-0 bg-white py-4 shadow-md z-50">
-          <ul className="flex flex-col gap-4 font-medium text-gray-600 px-4">
+        <nav className="absolute left-0 right-0 bg-white dark:bg-gray-950 py-4 shadow-md z-50">
+          <ul className="flex flex-col gap-4 font-medium text-gray-600 dark:text-gray-300 px-4">
             <li>
               <a href="#about" className="block group transition duration-200">
                 About
@@ -40,7 +41,7 @@ const MobileNavbar = () => {
           </ul>
 
           <div className="flex justify-between items-center mt-4 px-4">
-            <Sun width={24} height={24} />
+            <ThemeSwitch />
             <CVButton />
           </div>
         </nav>
