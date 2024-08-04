@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg: #ffffff; /* Light mode background color */
+}
+
+:root.dark {
+  --bg: #030712; /* Dark mode background color */
+}
+
+html {
+  background-color: var(--bg);
+}

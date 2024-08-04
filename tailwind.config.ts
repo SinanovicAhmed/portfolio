@@ -9,11 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        image_light: "url('/images/photoofme_light.png')",
+        image_dark: "url('/images/photoofme_dark.png')",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {
-        "dark-gray": "4B5563",
+      backgroundColor: {
+        dark: "#111827", // Set your desired dark background color here
       },
     },
   },
