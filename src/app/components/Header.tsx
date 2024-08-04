@@ -42,7 +42,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="h-6 w-[0.15rem] bg-gray-100"></div>
+          <div className="h-6 w-[0.15rem] bg-gray-100 dark:bg-gray-800"></div>
 
           <div className="flex gap-4 items-center">
             <ThemeSwitch />
