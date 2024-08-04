@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 import SectionTitle from "./components/SectionTitle";
+import About from "./components/About";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <SectionTitle title="About me" />
-      <div className="w-2 h-20"></div>
+      <About />
     </main>
   );
 }

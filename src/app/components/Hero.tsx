@@ -30,7 +30,9 @@ const Hero = () => {
           </div>
           <SocialLinks />
         </div>
-        <Photo />
+        <div className="hidden md:block">
+          <Photo />
+        </div>
       </div>
     </section>
   );

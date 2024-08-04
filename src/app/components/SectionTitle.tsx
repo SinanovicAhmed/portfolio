@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionTitle = ({ title }: { title: string }) => {
   return (
-    <div data-aos="fade-in" className="relative flex justify-center">
+    <div className="relative flex justify-center mb-16">
       <h2 className=" text-gray-200 dark:text-gray-900 dark:text-opacity-20 text-3xl md:text-4xl font-black tracking-widest">
         {title.toUpperCase()}
       </h2>
