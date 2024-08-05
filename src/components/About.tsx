@@ -4,13 +4,13 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section className="mx-auto max-w-7xl px-2 py-24">
+    <section className="mx-auto max-w-7xl px-2 pb-24">
       <SectionTitle title="About me" />
       <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center md:justify-between items-center px-2">
         <Photo flip={true} />
         <div className="">
           <h2 className="font-bold text-gray-900 dark:text-gray-50 text-2xl sm:text-3xl pb-6">Curious about me?</h2>
-          <p className="text-gray-600 dark:text-gray-50 text-sm sm:text-base max-w-[600px]">
+          <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base max-w-[600px]">
             Hello! I&#39;m Ahmed Sinanović, a dedicated Software Engineer and Web Developer from Žepče, Bosnia and
             Herzegovina. <br />
             <br />

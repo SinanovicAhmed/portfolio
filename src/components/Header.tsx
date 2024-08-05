@@ -6,8 +6,8 @@ import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => {
   return (
-    <header className="relative w-full bg-white dark:bg-gray-950">
-      <div className="h-16 flex justify-between items-center max-w-7xl mx-auto py-2 px-4">
+    <header className="z-40 sticky top-0 w-full bg-white dark:bg-gray-950 shadow-sm">
+      <div className="relative h-16 flex justify-between items-center max-w-7xl mx-auto py-2 px-4">
         <h2 className="font-black text-gray-800 dark:text-gray-100 text-2xl">&lt; SA /&gt;</h2>
 
         <MobileNavbar />
