@@ -1,0 +1,59 @@
+import React from "react";
+import { Github } from "lucide-react";
+import Image from "next/image";
+
+interface Props {
+  project: {
+    name: string;
+    image: string;
+    description: string;
+    technologies: string[];
+    gitLink?: string;
+    demoLink?: string;
+  };
+  reverse: boolean;
+}
+
+const ProjectItem = ({ project, reverse }: Props) => {
+  return (
+    <div
+      className={`flex flex-col lg:flex-row ${
+        reverse && "flex-row-reverse"
+      } gap-6 px-4 py-8 w-full rounded-md bg-gray-50 dark:bg-gray-900 shadow-md hover:scale-[101%] transition-all  duration-75 border border-gray-300 dark:border-transparent`}
+    >
+      <div className="relative lg:w-1/2 w-full aspect-[16/9] h-auto overflow-hidden rounded-md">
+        <Image
+          src={project.image}
+          alt={project.name}
+          layout="fill"
+          objectFit="contain"
+          className="transition-transform duration-300 ease-in-out transform hover:scale-110"
+        />
+      </div>
+
+      <div className="w-[2px] bg-gray-200 dark:bg-gray-800"></div>
+
+      <div className="flex flex-col gap-6 justify-between lg:w-1/2">
+        <h2 className="text-gray-900 dark:text-gray-300 text-xl font-medium">{project.name}</h2>
+        <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+        <div className="flex flex-wrap gap-4">
+          {project.technologies.map((technology) => {
+            return (
+              <p
+                key={technology}
+                className="rounded-full px-2 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
+              >
+                {technology}
+              </p>
+            );
+          })}
+        </div>
+        <a href={project.gitLink} target="_blank" rel="noopener noreferrer" aria-label="Project on GitHub">
+          <Github className="stroke-[#4b5563] dark:stroke-gray-50" />
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectItem;

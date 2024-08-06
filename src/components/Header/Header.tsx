@@ -1,7 +1,6 @@
 import React from "react";
-import { Sun } from "lucide-react";
 import MobileNavbar from "./MobileNavbar";
-import CVButton from "./CVButton";
+import CVButton from "../CVButton";
 import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => {

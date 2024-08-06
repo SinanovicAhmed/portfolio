@@ -2,7 +2,7 @@
 import Hamburger from "hamburger-react";
 import { Sun } from "lucide-react";
 import React, { useState } from "react";
-import CVButton from "./CVButton";
+import CVButton from "../CVButton";
 import ThemeSwitch from "./ThemeSwitch";
 
 const MobileNavbar = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import SkillItem from "./SkillItem";
 import { skills } from "@/constants/skills";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 
 const Skills = () => {
   return (
