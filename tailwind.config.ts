@@ -14,7 +14,11 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-        dark: "#111827", // Set your desired dark background color here
+        dark: "#111827",
+      },
+
+      fontFamily: {
+        logoFont: ["Lemon", "serif"],
       },
     },
   },

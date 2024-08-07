@@ -18,7 +18,7 @@ const ProjectItem = ({ project, reverse }: Props) => {
   return (
     <div
       className={`flex flex-col lg:flex-row ${
-        reverse && "flex-row-reverse"
+        reverse && "lg:flex-row-reverse"
       } gap-6 px-4 py-8 w-full rounded-md bg-gray-50 dark:bg-gray-900 shadow-md hover:scale-[101%] transition-all  duration-75 border border-gray-300 dark:border-transparent`}
     >
       <div className="relative lg:w-1/2 w-full aspect-[16/9] h-auto overflow-hidden rounded-md">

@@ -9,7 +9,7 @@ const Projects = () => {
       <SectionTitle title="My projects" subtitle="Some of the projects I have built" />
       <div className="space-y-14">
         {projects.map((project, index) => (
-          <ProjectItem key={project.name} project={project} reverse={index % 2 == 0} />
+          <ProjectItem key={project.name} project={project} reverse={index % 2 !== 0} />
         ))}
       </div>
     </section>
