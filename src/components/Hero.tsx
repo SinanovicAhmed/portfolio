@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 
 const Hero = () => {
   return (
-    <section className="mx-auto h-[calc(100svh-64px)] max-w-7xl px-2">
+    <section id="hero" className="mx-auto h-[calc(100svh-64px)] max-w-7xl px-2">
       <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center md:justify-between items-center pb-10 px-2">
         <div className="space-y-12">
           <div className="space-y-2">

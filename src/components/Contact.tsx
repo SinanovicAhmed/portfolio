@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 
 const Contact = () => {
   return (
-    <section className="mx-auto max-w-7xl px-2 py-24">
+    <section id="contact" className="mx-auto max-w-7xl px-2 py-24">
       <SectionTitle title="Contact" />
       <div className="mx-auto flex flex-col gap-8 items-center max-w-[600px] text-center">
         <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">

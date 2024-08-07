@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <header className="z-40 sticky top-0 w-full bg-white dark:bg-gray-950 shadow-sm">
       <div className="relative h-16 flex justify-between items-center max-w-7xl mx-auto py-2 px-4">
-        <h2 className="font-logoFont font-black text-gray-800 dark:text-gray-100 text-xl">sinanovic</h2>
+        <a href="#hero">
+          <h2 className="font-logoFont font-black text-gray-800 dark:text-gray-100 text-xl">sinanovic</h2>
+        </a>
 
         <MobileNavbar />
 

@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle";
 
 const Skills = () => {
   return (
-    <section className="mx-auto max-w-7xl px-2 py-24">
+    <section id="skills" className="mx-auto max-w-7xl px-2 py-24">
       <SectionTitle title="My skills" subtitle="The skills, tools and technologies I used" />
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 px-2">
         {skills.map((skill, index) => (

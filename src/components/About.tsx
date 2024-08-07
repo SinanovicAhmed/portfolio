@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section className="mx-auto max-w-7xl px-2 pb-24">
+    <section id="about" className="mx-auto max-w-7xl px-2 pb-24">
       <SectionTitle title="About me" />
       <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center md:justify-between items-center px-2">
         <Photo flip={true} />
