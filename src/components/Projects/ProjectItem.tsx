@@ -34,14 +34,14 @@ const ProjectItem = ({ project, reverse }: Props) => {
       <div className="w-[2px] bg-gray-200 dark:bg-gray-800"></div>
 
       <div className="flex flex-col gap-6 justify-between lg:w-1/2">
-        <h2 className="text-gray-900 dark:text-gray-300 text-xl font-medium">{project.name}</h2>
-        <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+        <h2 className="text-gray-900 dark:text-gray-50 text-xl font-medium">{project.name}</h2>
+        <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">{project.description}</p>
         <div className="flex flex-wrap gap-4">
           {project.technologies.map((technology) => {
             return (
               <p
                 key={technology}
-                className="rounded-full px-2 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
+                className="rounded-full px-2 py-1 text-xs sm:text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
               >
                 {technology}
               </p>

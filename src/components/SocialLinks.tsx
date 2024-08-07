@@ -11,7 +11,7 @@ const SocialLinks = () => {
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
-        <Github className="stroke-[#4b5563] dark:stroke-gray-50" />
+        <Github className="stroke-gray-600 dark:stroke-gray-50" />
       </a>
       <a
         className="hover:scale-105 transition-all"
@@ -20,10 +20,10 @@ const SocialLinks = () => {
         rel="noopener noreferrer"
         aria-label="LinkedIn"
       >
-        <Linkedin className="stroke-[#4b5563] dark:stroke-gray-50" />
+        <Linkedin className="stroke-gray-600 dark:stroke-gray-50" />
       </a>
       <a className="hover:scale-105 transition-all" href="mailto:ahmed.sinanovic.20@size.ba" aria-label="Email">
-        <Mail className="stroke-[#4b5563] dark:stroke-gray-50" />
+        <Mail className="stroke-gray-600 dark:stroke-gray-50" />
       </a>
     </div>
   );
