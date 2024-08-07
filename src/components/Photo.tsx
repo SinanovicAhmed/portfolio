@@ -1,14 +1,22 @@
 "use client";
 import React from "react";
 
-const Photo = ({ flip }: { flip?: boolean }) => {
+interface Props {
+  flip?: boolean;
+  size: "small" | "large";
+}
+
+const Photo = ({ flip, size }: Props) => {
+  const flipClass = flip ? "transform -scale-x-100" : "";
+  const sizeClass =
+    size === "large" ? "hidden md:block w-80 h-80 lg:w-96 lg:h-96" : "hidden sm:block w-40 h-40 sm:w-48 sm:h-48";
+  const positionClass = size === "large" ? "-bottom-8 -right-8" : "-bottom-4 -right-4";
+
   return (
-    <div className="relative inline-block mr-8 shadow-xl">
-      <div className="absolute -bottom-8 -right-8 w-full h-full bg-gray-900 dark:bg-gray-700 z-[-1]" />
+    <div className={`relative inline-block mr-8 shadow-xl ${flipClass}`}>
+      <div className={`absolute w-full h-full bg-gray-900 dark:bg-gray-700 z-[-1] ${positionClass}`} />
       <div
-        className={`hidden md:block w-80 h-80 lg:w-96 lg:h-96 bg-image_light dark:bg-image_dark bg-cover bg-center shadow-md ${
-          flip ? "transform -scale-x-100" : ""
-        }`}
+        className={`bg-image_light dark:bg-image_dark bg-cover bg-center shadow-md ${sizeClass}`}
         aria-label="Profile photo"
         role="img"
       />

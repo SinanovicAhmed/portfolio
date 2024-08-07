@@ -5,12 +5,13 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <section id="about" className="mx-auto max-w-7xl px-2 pb-24">
-      <SectionTitle title="About me" />
-      <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center md:justify-between items-center px-2">
-        <Photo flip={true} />
-        <div className="">
+      <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center items-center px-2">
+        <div className="relative border border-gray-300 dark:border-gray-700 p-8 sm:pl-32 sm:ml-28 shadow-md">
+          <div className="absolute -bottom-24 -left-24">
+            <Photo flip={true} size="small" />
+          </div>
           <h2 className="font-bold text-gray-900 dark:text-gray-50 text-2xl sm:text-3xl pb-6">Curious about me?</h2>
-          <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base max-w-[600px]">
+          <p className="max-w-[50rem] text-gray-600 dark:text-gray-300 text-sm sm:text-base">
             Hello! I&#39;m Ahmed Sinanović, a dedicated Software Engineer and Web Developer from Žepče, Bosnia and
             Herzegovina. <br />
             <br />

@@ -19,7 +19,7 @@ const ProjectItem = ({ project, reverse }: Props) => {
     <div
       className={`flex flex-col lg:flex-row ${
         reverse && "lg:flex-row-reverse"
-      } gap-6 px-4 py-8 w-full rounded-md bg-gray-50 dark:bg-gray-900 shadow-md hover:scale-[101%] transition-all  duration-75 border border-gray-300 dark:border-transparent`}
+      } gap-6 px-4 py-8 w-full rounded-md bg-gray-50 dark:bg-gray-900 drop-shadow-md hover:drop-shadow-2xl hover:scale-[101%] transition-all  duration-75 border border-gray-300 dark:border-transparent`}
     >
       <div className="relative lg:w-1/2 w-full aspect-[16/9] h-auto overflow-hidden rounded-md">
         <Image

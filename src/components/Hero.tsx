@@ -31,7 +31,7 @@ const Hero = () => {
           <SocialLinks />
         </div>
         <div className="hidden md:block">
-          <Photo />
+          <Photo size="large" />
         </div>
       </div>
     </section>

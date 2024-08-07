@@ -8,7 +8,7 @@ interface Props {
 const SectionTitle = ({ title, subtitle }: Props) => {
   return (
     <div className="mb-14 space-y-4 text-center">
-      <h4 className="text-lg text-gray-900 dark:text-gray-300 font-black border-b-[1px] border-gray-300 dark:border-gray-700">
+      <h4 className="text-lg text-gray-900 dark:text-gray-300 font-black border-b border-gray-300 dark:border-gray-700">
         {title.toUpperCase()}
       </h4>
 
