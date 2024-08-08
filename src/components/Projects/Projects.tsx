@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle";
 
 const Projects = () => {
   return (
-    <section id="projects" className="mx-auto max-w-7xl px-2 py-24">
+    <section id="projects" className="mx-auto max-w-7xl px-2 py-24 overflow-hidden">
       <SectionTitle title="My projects" subtitle="Some of the projects I have built" />
       <div className="space-y-14">
         {projects.map((project, index) => (

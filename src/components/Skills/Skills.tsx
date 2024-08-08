@@ -9,7 +9,7 @@ const Skills = () => {
       <SectionTitle title="My skills" subtitle="The skills, tools and technologies I used" />
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 px-2">
         {skills.map((skill, index) => (
-          <SkillItem key={index} imageUrl={skill.icon} name={skill.name} />
+          <SkillItem key={index} index={index} imageUrl={skill.icon} name={skill.name} />
         ))}
       </div>
     </section>

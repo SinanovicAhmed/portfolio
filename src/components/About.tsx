@@ -6,7 +6,10 @@ const About = () => {
   return (
     <section id="about" className="mx-auto max-w-7xl px-2 pb-24 sm:pb-48 sm:pt-14">
       <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center items-center px-2">
-        <div className="relative border border-gray-300 dark:border-gray-700 p-8 sm:pl-32 sm:ml-28 shadow-md">
+        <div
+          data-aos="fade"
+          className="relative border border-gray-300 dark:border-gray-700 p-8 sm:pl-32 sm:ml-28 shadow-md"
+        >
           <div className="absolute -bottom-24 -left-24">
             <Photo flip={true} size="small" />
           </div>

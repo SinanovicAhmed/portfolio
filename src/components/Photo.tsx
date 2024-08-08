@@ -13,13 +13,15 @@ const Photo = ({ flip, size }: Props) => {
   const positionClass = size === "large" ? "-bottom-8 -right-8" : "-bottom-4 -right-4";
 
   return (
-    <div className={`relative inline-block mr-8 shadow-xl ${flipClass}`}>
-      <div className={`absolute w-full h-full bg-gray-900 dark:bg-gray-700 z-[-1] ${positionClass}`} />
-      <div
-        className={`bg-image_light dark:bg-image_dark bg-cover bg-center shadow-md ${sizeClass}`}
-        aria-label="Profile photo"
-        role="img"
-      />
+    <div data-aos="fade">
+      <div className={`relative inline-block mr-8 shadow-xl ${flipClass}`}>
+        <div className={`absolute w-full h-full bg-gray-900 dark:bg-gray-700 z-[-1] ${positionClass}`} />
+        <div
+          className={`bg-image_light dark:bg-image_dark bg-cover bg-center shadow-md ${sizeClass}`}
+          aria-label="Profile photo"
+          role="img"
+        />
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section id="hero" className="mx-auto h-[calc(100svh-64px)] max-w-7xl px-2">
       <div className="w-full h-full flex flex-col md:flex-row gap-8 justify-center md:justify-between items-center pb-10 px-2">
-        <div className="space-y-12">
+        <div data-aos="fade-in" className="space-y-12">
           <div className="space-y-2">
             <h2 className="font-bold text-gray-900 dark:text-gray-50 text-4xl sm:text-6xl">
               Hi I&#39;m Ahmed &#128075;
