@@ -1,5 +1,4 @@
 import React from "react";
-import { Sun } from "lucide-react";
 import MobileNavbar from "./MobileNavbar";
 import CVButton from "../CVButton";
 import ThemeSwitch from "./ThemeSwitch";
@@ -48,7 +47,9 @@ const Header = () => {
 
           <div className="flex gap-4 items-center">
             <ThemeSwitch />
-            <CVButton />
+            <a href="/documents/cv.pdf" target="_blank" rel="noopener noreferrer">
+              <CVButton />
+            </a>
           </div>
         </div>
       </div>
