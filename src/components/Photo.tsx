@@ -17,7 +17,7 @@ const Photo = ({ flip, size }: Props) => {
       <div className={`relative inline-block mr-8 shadow-xl ${flipClass}`}>
         <div className={`absolute w-full h-full bg-gray-900 dark:bg-gray-700 z-[-1] ${positionClass}`} />
         <div
-          className={`bg-image_light dark:bg-image_dark bg-cover bg-center shadow-md ${sizeClass}`}
+          className={`bg-image_light dark:bg-image_dark bg-cover bg-center shadow-md grayscale-[60%] ${sizeClass}`}
           aria-label="Profile photo"
           role="img"
         />
