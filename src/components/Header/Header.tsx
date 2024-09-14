@@ -47,9 +47,7 @@ const Header = () => {
 
           <div className="flex gap-4 items-center">
             <ThemeSwitch />
-            <a href="/documents/cv.pdf" target="_blank" rel="noopener noreferrer">
-              <CVButton />
-            </a>
+            <CVButton />
           </div>
         </div>
       </div>
