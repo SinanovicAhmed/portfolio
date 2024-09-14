@@ -5,7 +5,11 @@ import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => {
   return (
-    <header data-aos="fade-down" className="z-40 sticky top-0 w-full bg-white dark:bg-gray-950 shadow-sm">
+    <header
+      data-aos="fade-down"
+      data-aos-once="true"
+      className="z-40 sticky top-0 w-full bg-white dark:bg-gray-950 shadow-sm"
+    >
       <div className="relative h-16 flex justify-between items-center max-w-7xl mx-auto py-2 px-4">
         <a href="#hero">
           <h2 className="font-logoFont font-black text-gray-800 dark:text-gray-100 text-xl">sinanovic</h2>
